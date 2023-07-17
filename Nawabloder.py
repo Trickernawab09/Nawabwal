@@ -72,15 +72,16 @@ def poct(comment):
     browser.select_form(nr = 0)
     print("\033[1;37;40m")
     	
-    browser.form['comment_text'] = comment
+    browser.form['comment_text'](k= comment
         
     r = browser.submit()
     
     print("\033[1;37;40m")
     e = datetime.datetime.now()
     print (e.strftime("»» %d/%m/%Y   %I:%M:%S %p"))
-logo = ("""\\033[1;33m
+logo = ("""\033[1;33m
       _   _                     _                 _        
+
 \033[1;33m | \ | |                   | |               | |       
 \033[1;33m |  \| | __ ___      ____ _| |__ ______ _  __| | __ _  
 \033[1;33m | . ` |/ _` \ \ /\ / / _` | '_ \_  / _` |/ _` |/ _` | 
